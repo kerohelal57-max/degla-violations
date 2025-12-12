@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مواقف نادي وادي دجلة - ملاحظات الأعضاء</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fc;
+            color: #333;
+            margin: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #7da810;
+            padding: 30px 15px;
+            text-align: center;
+        }
+        header img {
+            height: 120px;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            color: white;
+            font-size: 26px;
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        .car {
+            background: white;
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border-right: 5px solid #003087;
+        }
+        .info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 10px;
+            margin-bottom: 15px;
+            font-size: 17px;
+        }
+        .label {
+            font-weight: bold;
+            color: #003087;
+        }
+        .value {
+            background: #eef2ff;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+        .car img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            margin-top: 10px;
+        }
+        .alert {
+            background: #ffe6e6;
+            border: 3px solid #c00;
+            color: #900;
+            padding: 18px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .summary-box {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 40px auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border: 2px solid #003087;
+        }
+        .summary-box h3 {
+            text-align: center;
+            color: #003087;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 18px;
+        }
+        th, td {
+            padding: 14px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #003087;
+            color: white;
+        }
+
+        /* جدول عدد المخالفات + السعر */
+        .fines-table {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 40px auto;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            border: 3px solid #e74c3c;
+        }
+        .fines-table h3 {
+            text-align: center;
+            color: #c0392b;
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        /* الإجمالي الكلي الكبير */
+        .grand-total {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 40px;
+            border-radius: 18px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin: 60px auto 40px;
+            box-shadow: 0 12px 35px rgba(231,76,60,0.6);
+            max-width: 900px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/ar/9/9f/Wadi_Degla_FC_logo.png" alt="وادي دجلة">
+    <h1>تقرير مخالفات السيارات شركة أندية وادي دجلة</h1>
+</header>
+
+<div class="container">
+
+    <!-- الـ 8 عربيات (نفس اللي عندك بالظبط) -->
+    <div class="car">
+        <div class="info">
+            <div><span class="label">اسم المالك:</span> <div class="value">شركة أندية وادي دجلة</div></div>
+            <div><span class="label">نوع الترخيص:</span> <div class="value">أتوبيس خاص</div></div>
+            <div><span class="label">المحافظة:</span> <div class="value">القاهرة</div></div>
+            <div><span class="label">وحدة الترخيص:</span> <div class="value">وحدة مرور التبين</div></div>
+            <div><span class="label">رقم اللوحة:</span> <div class="value">و م د 824</div></div>
+        </div>
+        <img src="car1.jpg">
+    </div>
+
+    <div class="car">
+        <div class="info">
+            <div><span class="label">اسم المالك:</span> <div class="value">شركة أندية وادي دجلة</div></div>
+            <div><span class="label">نوع الترخيص:</span> <div class="value">أتوبيس خاص</div></div>
+            <div><span class="label">المحافظة:</span> <div class="value">القاهرة</div></div>
+            <div><span class="label">وحدة الترخيص:</span> <div class="value">وحدة مرور التبين</div></div>
+            <div><span class="label">رقم اللوحة:</span> <div class="value">و م د 825</div></div>
+        </div>
+        <img src="car2.jpg">
+    </div>
+
+    <div class="car">
+        <div class="info">
+            <div><span class="label">اسم المالك:</span> <div class="value">شركة أندية وادي دجلة</div></div>
+            <div><span class="label">نوع الترخيص:</span> <div class="value">أتوبيس خاص</div></div>
+            <div><span class="label">المحافظة:</span> <div class="value">القاهرة</div></div>
+            <div><span class="label">وحدة الترخيص:</span> <div class="value">وحدة مرور التبين</div></div>
+            <div><span class="label">رقم اللوحة:</span> <div class="value">و م د 826</div></div>
+        </div>
+        <img src="car3.jpg">
+    </div>
+
+    <div class="car">
+        <div class="info">
+            <div><span class="label">اسم المالك:</span> <div class="value">شركة أندية وادي دجلة</div></div>
+            <div><span class="label">نوع الترخيص:</span> <div class="value">أتوبيس خاص</div></div>
+            <div><span class="label">المحافظة:</span> <div class="value">القاهرة</div></div>
+            <div><span class="label">وحدة الترخيص:</span> <div class="value">وحدة مرور التبين</div></div>
+            <div><span class="label">رقم اللوحة:</span> <div class="value">و م د 827</div></div>
+        </div>
+        <img src="car4.jpg">
+    </div>
+
+    <div class="car">
+        <div class="info">
+            <div><span class="label">اسم المالك:</span> <div class="value">شركة أندية وادي دجلة</div></div>
+            <div><span class="label">نوع الترخيص:</span> <div class="value">أتوبيس خاص</div></div>
+            <div><span class="label">المحافظة:</span> <div class="value">القاهرة</div></div>
+            <div><span class="label">وحدة الترخيص:</span> <div class="value">وحدة مرور التبين</div></div>
+            <div><span class="label">رقم اللوحة:</span> <div class="value">و م د 829</div></div>
+        </div>
+        <img src="car5.jpg">
+    </div>
+
+    <div class="car">
+        <div class="info">
+            <div><span class="label">اسم المالك:</span> <div class="value">شركة أندية وادي دجلة</div></div>
+            <div><span class="label">نوع الترخيص:</span> <div class="value">أتوبيس خاص</div></div>
+            <div><span class="label">المحافظة:</span> <div class="value">القاهرة</div></div>
+            <div><span class="label">وحدة الترخيص:</span> <div class="value">وحدة مرور التبين</div></div>
+            <div><span class="label">رقم اللوحة:</span> <div class="value">و م د 831</div></div>
+        </div>
+        <img src="car6.jpg">
+    </div>
+
+    <div class="car">
+        <div class="info">
+            <div><span class="label">اسم المالك:</span> <div class="value">شركة أندية وادي دجلة</div></div>
+            <div><span class="label">نوع الترخيص:</span> <div class="value">أتوبيس خاص</div></div>
+            <div><span class="label">المحافظة:</span> <div class="value">القاهرة</div></div>
+            <div><span class="label">وحدة الترخيص:</span> <div class="value">وحدة مرور التبين</div></div>
+            <div><span class="label">رقم اللوحة:</span> <div class="value">ن ا ر 985</div></div>
+        </div>
+        <img src="car7.jpg">
+    </div>
+
+    <div class="car">
+        <div class="info">
+            <div><span class="label">اسم المالك:</span> <div class="value">شركة أندية وادي دجلة</div></div>
+            <div><span class="label">نوع الترخيص:</span> <div class="value">نقل</div></div>
+            <div><span class="label">المحافظة:</span> <div class="value">القاهرة</div></div>
+            <div><span class="label">وحدة الترخيص:</span> <div class="value">وحدة مرور التبين</div></div>
+            <div><span class="label">رقم اللوحة:</span> <div class="value">ط ل ب 263</div></div>
+        </div>
+        <img src="car8.jpg">
+    </div>
+
+    <!-- توضيح 831 -->
+    <div class="alert">
+        تحذير هام: العربية رقم و م د 831<br>
+        ليها 2 مخالفة عدم تعليمات + مخالفات على النموذج
+    </div>
+
+    <!-- التاكسي -->
+    <div class="car" style="border-right:8px solid #e67e22;">
+        <div class="alert">
+            ملاحظة: المرور لغبط في الحروف!<br>
+            كتبوا مخالفة على الأتوبيس بدل التاكسي بسبب تشابه الحروف
+        </div>
+        <div class="info">
+            <div><span class="label">نوع السيارة:</span> <div class="value">تاكسي - القاهرة</div></div>
+            <div><span class="label">رقم اللوحة الصحيح (التاكسي):</span> <div class="value">ق م ر ٨٣١</div></div>
+            <div><span class="label">اللوحة اللي اتكتبت بالغلط (الأتوبيس):</span> <div class="value">و م د ٨٣١</div></div>
+            <div><span class="label">تاريخ المخالفة الغلط:</span> <div class="value">14 أكتوبر 2025</div></div>
+            <div><span class="label">الملاحظة:</span> <div class="value">المخالفة دي بتاعة التاكسي وليس الأتوبيس</div></div>
+        </div>
+        <img src="taxi.jpg">
+    </div>
+
+</div>
+
+<!-- جدول عدد المخالفات + السعر لكل سيارة -->
+<div class="fines-table">
+    <h3>عدد المخالفات والقيمة المالية لكل سيارة</h3>
+    <table>
+        <tr><th>رقم اللوحة</th><th>عدد المخالفات</th><th>القيمة الإجمالية</th></tr>
+        <tr><td>و م د 824</td><td>7</td><td>4935 جنيه</td></tr>
+        <tr><td>و م د 825</td><td>6</td><td>4430 جنيه</td></tr>
+        <tr><td>و م د 826</td><td>2</td><td>1710 جنيه</td></tr>
+        <tr><td>و م د 827</td><td>6</td><td>3846 جنيه</td></tr>
+        <tr><td>و م د 829</td><td>4</td><td>3120 جنيه</td></tr>
+        <tr style="background:#ffebee;"><td style="color:rgb(16, 16, 16);font-weight:bold;">و م د 831</td><td style="color:rgb(7, 7, 7);font-weight:bold;">5</td><td style="color:rgb(6, 5, 5);font-weight:bold;">3625 جنيه</td></tr>
+        <tr><td>ن ا ر 985</td><td>3</td><td>1315 جنيه</td></tr>
+        <tr><td>ط ل ب 263</td><td>3</td><td>1515 جنيه</td></tr>
+    </table>
+</div>
+
+<!-- الإجمالي الكلي الكبير -->
+<div class="grand-total">
+    إجمالي المخالفات للـ 8 سيارات = 36 مخالفة<br>
+    <span style="font-size:36px;">القيمة الكلية = 24496 جنيه مصري</span>
+</div>
+
+<!-- الجدول القديم بتاع آخر مشاهدة -->
+<div class="summary-box">
+    <h3>ملخص آخر مخالفة / مخالفة لكل سيارة</h3>
+    <table>
+        <tr><th>رقم اللوحة</th><th>آخر مخالفة معروفة</th></tr>
+        <tr><td>و م د 824</td><td>7-4-2025</td></tr>
+        <tr><td>و م د 825</td><td>6-11-2025</td></tr>
+        <tr><td>و م د 826</td><td>10-11-2025</td></tr>
+        <tr><td>و م د 827</td><td>14-11-2025</td></tr>
+        <tr><td>و م د 829</td><td>15-9-2025</td></tr>
+        <tr style="color:rgb(8, 8, 8);font-weight:bold;"><td>و م د 831</td><td>14-10-2025</td></tr>
+        <tr><td>ن ا ر 985</td><td>8-10-2025</td></tr>
+        <tr><td>ط ل ب 263</td><td>8-4-2024</td></tr>
+    </table>
+</div>
+
+<footer>
+    شركة انديه وادي دجله • 12 ديسمبر 2025
+</footer>
+
+</body>
+</html>
